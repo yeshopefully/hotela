@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* findahotel */
+#findahotel_nav{
+    position: fixed;
+    top: 290px;
+    left: 20px;
+    width: 260px;
+    height: 210px;
+    background-color: #1c1308;
+    border-top: 3px double #c59d6e;
+    border-right: 1px solid #c59d6e;
+    border-bottom: 3px double #c59d6e;
+    border-left: 1px solid #c59d6e;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    z-index: 99;
+    cursor: move;
+    opacity: 0.9;
+}
+#findahotel_nav:hover{
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+#findahotel_nav span, 
+#findahotel_nav p{
+    color: #c59d6e;
+    font-family: 'Noto Serif KR', serif;
+    letter-spacing: 3px;
+}
+#findahotel_nav span{
+    font-size: 24px;
+    font-weight: 200;
+    border-bottom: 4px double #c59d6e;
+}
+#findahotel_nav p{
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 50px;
+}
+#findahotel_nav p::before{
+    content: "•";
+    position: absolute;
+    left: 30px;
+}
+#findahotel_nav p:first-of-type{
+    margin-top: 20px;
+}
+#findahotel_nav p:hover{
+    color: #dfca9c;
+}
+.title_area{
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    background-image: url("../images/introduce_title.jpg");
+    background-attachment: fixed;
+    background-position: center bottom;
+    text-align: center;
+    padding-top: 120px;
+}
+.title_wrap{
+    width: 420px;
+    height: 100px;
+    border-bottom: 3px double #fff;
+    border-top: 3px double #fff;
+    margin: 0 auto;
+    position: relative;
+}
+.title_area h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 60px;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 5px;
+}
+.title_area h2::after{
+    content: "";
+    width: 420px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+.title_area h5{
+    color: #eee;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: 'Noto Serif KR', serif;
+}
+.region_area{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.region_wrap{
+    width: 100%;
+    height: 600px;
+}
+.region_l{
+    width: 760px;
+    height: 600px;
+    padding: 50px;
+    float: left;
+}
+.region_r{
+    width: 440px;
+    height: 600px;
+    float: right;
+}
+.region_item{
+    width: 200px;
+    height: 250px;
+    margin-right: 20px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.region_item img{
+    height: 200px;
+}
+.region_item .frame{
+    width: 190px;
+    height: 190px;
+    border: 3px double #fff;
+    box-sizing: border-box;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 1;
+    cursor: pointer;
+    transition: border 0.3s, background-color 0.3s;
+}
+.region_item .frame>span{
+    color: #fff;
+    display: none;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 50px auto;
+}
+.region_item .frame>a{
+    text-decoration: none;
+    height: 25px;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 auto;
+    padding: 0 5px;
+    width: 68px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.region_item .frame>a:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+.region_item .frame:hover{
+    border: 3px double #000;
+    background-color: rgba(0,0,0,0.5);
+}
+.region_item .frame:hover span{
+    display: block;
+}
+.region_item .frame:hover a{
+    display: block;
+}
+.region_item p{
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 50px;
+    font-family: 'Noto Serif KR', serif;
+    text-align: center;
+}
+.region_r h3{
+    font-size: 39px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 150px;
+    font-family: 'Noto Serif KR', serif;
+}
+.region_r p{
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Noto Serif KR', serif;
+}
+.region_r a{
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin-top: 100px;
+    border: none;
+    float: right;
+    color: #dfca9c;
+    background-color: #1c1308;
+    transition: color 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+.region_r a:hover{
+    color: #1c1308;
+    background-color: #dfca9c;
+}
+.nearby_area{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.map{
+    margin: 0 auto;
+    width: 1000px;
+    height: 500px;
+    background-color: #ccc;
+    overflow: hidden;
+    cursor: move;
+    position: relative;
+}
+.map_img{
+    width: 3000px;
+    height: 1511px;
+    margin-left: -1000px;
+    margin-top: -600px;
+    background-image: url("../images/naver_map.png");
+    background-position: center center;
+}
+.map>p{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 10px;
+    z-index: 1;
+}

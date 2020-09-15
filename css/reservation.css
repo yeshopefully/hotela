@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* reservation */
+#reservation_nav{
+    position: fixed;
+    top: 290px;
+    left: 20px;
+    width: 260px;
+    height: 310px;
+    background-color: #1c1308;
+    border-top: 3px double #c59d6e;
+    border-right: 1px solid #c59d6e;
+    border-bottom: 3px double #c59d6e;
+    border-left: 1px solid #c59d6e;
+    text-align: center;
+    padding: 30px 0;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    z-index: 99;
+    cursor: move;
+    opacity: 0.9;
+}
+#reservation_nav:hover{
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+#reservation_nav span, 
+#reservation_nav p{
+    color: #c59d6e;
+    font-family: 'Noto Serif KR', serif;
+    letter-spacing: 3px;
+}
+#reservation_nav span{
+    font-size: 24px;
+    font-weight: 200;
+    border-bottom: 4px double #c59d6e;
+}
+#reservation_nav p{
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 50px;
+}
+#reservation_nav p::before{
+    content: "•";
+    position: absolute;
+    left: 30px;
+}
+#reservation_nav p:first-of-type{
+    margin-top: 20px;
+}
+#reservation_nav p:hover{
+    color: #dfca9c;
+}
+.title_area{
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    background-image: url("../images/introduce_title.jpg");
+    background-attachment: fixed;
+    background-position: center bottom;
+    text-align: center;
+    padding-top: 120px;
+}
+.title_wrap{
+    width: 390px;
+    height: 100px;
+    border-bottom: 3px double #fff;
+    border-top: 3px double #fff;
+    margin: 0 auto;
+    position: relative;
+}
+.title_area h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 60px;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 5px;
+}
+.title_area h2::after{
+    content: "";
+    width: 390px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+.title_area h5{
+    color: #eee;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: 'Noto Serif KR', serif;
+}
+.reservation_area{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.reservation_wrap{
+    margin: 0 auto;
+    width: 1020px;
+    height: 760px;
+    background-color: #333;
+    border-radius: 5px;
+}
+.tabbtn_area{
+    height: 50px;
+}
+.tabbtn_area a{
+    float: left;
+    text-decoration: none;
+    color: #c59d6e;
+    background-color: #333;
+    padding: 0 30px;
+    margin: 10px 0 0 10px;
+    width: 180px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 40px;
+    border-radius: 5px 5px 0 0;
+}
+.tabbtn_area a:hover{
+    color: #dfca9c;
+}
+.tabbtn_area a.active{
+    background-color: #e9dcc2;
+    color: #000;
+}
+.tab{
+    margin: 0 auto;
+    width: 1000px;
+    height: 700px;
+    background-color: #e9dcc2;
+    border-radius: 5px;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+.tab>h3{
+    margin: 0 0 50px 30px;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Noto Serif KR', serif;
+}
+.tab .input_wrap{
+    width: 356px;
+    height: 205px;
+    padding: 0 28px;
+    display: inline-block;
+}
+.tab .input_wrap input,
+.tab .input_wrap select,
+.tab .input_wrap button{
+    height: 32px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.tab .input_wrap input{
+    width: 300px;
+}
+.tab .input_wrap #branch{
+    width: 300px;
+}
+.tab .input_wrap #room-name{
+    width: 160px;
+}
+.tab .input_wrap #number-of-people{
+    width: 136px;
+}
+.tab .input_wrap #time1,
+.tab .input_wrap #time2{
+    width: 142px;
+}
+.tab .input_wrap button{
+    width: 300px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #dfca9c;
+    background-color: #1c1308;
+    transition: color 0.3s, background-color 0.3s;
+}
+.tab .input_wrap button:hover{
+    color: #1c1308;
+    background-color: #dfca9c;
+}
+.tab.active{
+    display: block;
+}
+#date1,
+#date2,
+#date3{
+    float: left;
+}
+.results{
+    width: 100%;
+    height: 280px;
+    margin-top: 30px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px;
+}
+.tab p{
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
